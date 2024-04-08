@@ -2,6 +2,7 @@
 
 require_once __DIR__ . '/../includes/app.php';
 
+use Controllers\CitaController;
 use Controllers\LoginController;
 use MVC\Router;
 
@@ -28,8 +29,8 @@ $router->get('/confirmar-cuenta', [LoginController::class, 'confirmar']);
 $router->get('/mensaje', [LoginController::class, 'mensaje']);
 
 
-
-
+//AREA PRIVADA
+$router->get('/cita', [CitaController::class, 'index']);
 
 
 
