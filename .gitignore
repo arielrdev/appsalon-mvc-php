@@ -1,3 +1,4 @@
+/node_modules/
 # Ignorar archivos generados por el sistema
 /.idea
 /.vscode
