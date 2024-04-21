@@ -1,23 +1,4 @@
-/node_modules/
-# Ignorar archivos generados por el sistema
-/.idea
-/.vscode
+node_modules
+vendor
 .DS_Store
-
-# Ignorar archivos de caché y logs
-/cache/
-/logs/
-
-# Ignorar archivos de configuración sensibles
-/config.php
-
-# Ignorar archivos de dependencias de Composer
-/vendor/
-
-# Ignorar archivos de respaldo y temporales
-*.bak
-*.swp
-*.~*
-
-# Ignorar archivos de carga de datos
-#/uploads/
+includes/.env
