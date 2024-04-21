@@ -17,4 +17,22 @@
             $this->nombre = $args['nombre'] ?? '';
             $this->precio = $args['precio'] ?? '';
         }
+
+        public function validar()
+        {
+            if(!$this->nombre) {
+                self::$alertas['error'][] = 'El nombre del Servicio es Obligatorio';
+            }
+
+            if(!$this->precio) {
+                self::$alertas['error'][] = 'El Precio es Obligatorio';
+            }
+
+            if(!is_numeric($this->precio)) {
+                self::$alertas['error'][] = 'El precio no es válido';
+            }
+
+            return self::$alertas;
+
+        }
     }
